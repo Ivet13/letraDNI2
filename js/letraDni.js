@@ -55,3 +55,8 @@ function comprobarLetraDNI () {
     outputConfirmacionDNI.innerHTML = 'INCORRECTO'
   }
 }
+
+// creamos una constante para acceder al boton y le asignamos con el
+// eventlistener que tiene que lanzar la funcion principal
+const boton = document.getElementById('boton')
+boton.addEventListener('click', comprobarLetraDNI)
